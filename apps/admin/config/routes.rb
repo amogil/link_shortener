@@ -3,7 +3,8 @@
 #
 # Example:
 # get '/hello', to: ->(env) { [200, {}, ['Hello from Hanami!']] }
+get '/links', to: 'links#index'
 
-root to: 'links#new'
+root to: 'dashboard#index'
 
-resources :links, only: [:new, :create, :show]
+resources :links, only: [:index, :new, :create]

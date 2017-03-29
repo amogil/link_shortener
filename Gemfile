@@ -7,6 +7,9 @@ gem 'hanami-model', '~> 1.0.0.beta3'
 gem 'pg'
 
 gem 'slim'
+gem 'hanami-bootstrap', github: 'davydovanton/hanami-bootstrap'
+gem 'roda'
+gem 'omniauth-github'
 
 group :development do
   # Code reloading
@@ -21,6 +24,7 @@ end
 group :test do
   gem 'rspec'
   gem 'capybara'
+  gem 'rspec-hanami'
 end
 
 group :production do
